@@ -5,8 +5,9 @@ import NewsLetter from "../components/NewsLetter";
 
 const Media = () => {
   const newsletterProps = {
-    background: `url("/image/media/newletter.png") center center / cover no-repeat 
-    `,
+    background: `url("/image/media/newletter.png") center center / cover no-repeat`,
+    content: "Stay In the Know About Latest News",
+    paragraph :"Keep up with what’s happening at Truxcargo and never miss a update."
  
     // backgroundImage,
     

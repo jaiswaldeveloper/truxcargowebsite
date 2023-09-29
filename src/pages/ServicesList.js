@@ -25,36 +25,28 @@ const ServicesList = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    padding: "5rem",
+    padding: "7rem 0",
   };
-  const bgGredientt = {
-    background: `url("/image/services_page/icons/Rectangle_back.png")`,
-    width: "100%",
-    height: "100vh",
-    backgroundSize: "contain",
-    backgroundPosition: "right",
-    backgroundRepeat: "no-repeat",
-    paddingTop: "2rem",
-  };
-  const bgalternate = {
-    background: `url("/image/services_page/icons/Rectangle_left.png")`,
-    width: "100%",
-    height: "100vh",
-    backgroundSize: "contain",
+  // const bgGredientt = {
+  //   background: `url("/image/services_page/icons/Rectangle_back.png")`,
+  //   width: "100%",
+  //   height: "100vh",
+  //   backgroundSize: "contain",
+  //   backgroundPosition: "right",
+  //   backgroundRepeat: "no-repeat",
+  //   paddingTop: "2rem",
+  // };
 
-    backgroundPosition: "left",
-    backgroundRepeat: "no-repeat",
-    paddingTop: "2rem",
-  };
   const bgAirFright = {
-    background: `url("/image/services_page/icons/air_freght_rectangle.png")`,
-    width: "100%",
-    height: "100vh",
-    backgroundSize: "contain",
-    backgroundSize: "600px 600px",
-    backgroundPosition: "right",
-    backgroundRepeat: "no-repeat",
-    paddingTop: "2rem",
+    // background: `url("/image/services_page/icons/air_freght_rectangle2.png")`,
+    // width: "100%",
+    // height: "100vh",
+    // backgroundSize: "contain",
+    // backgroundSize: "600px 600px",
+    // backgroundPosition: "right",
+    // backgroundRepeat: "no-repeat",
+    // paddingTop: "2rem",
+    // display: "none"
   };
   const bgalternateFullTruck = {
     background: `url("/image/services_page/icons/fulll_truck_rectangle.png")`,
@@ -66,6 +58,7 @@ const ServicesList = () => {
     backgroundPosition: "left",
     backgroundRepeat: "no-repeat",
     paddingTop: "2rem",
+    display: "none"
   };
   const bgPartTruck = {
     background: `url("/image/services_page/icons/bg_parttruck2.png")`,
@@ -74,6 +67,7 @@ const ServicesList = () => {
     backgroundSize: "500px 500px",
     backgroundPosition: "right",
     backgroundRepeat: "no-repeat",
+    display: "none"
   };
   const bgalternatefleet = {
     background: `url("/image/services_page/icons/fleet_bg.png")`,
@@ -84,6 +78,7 @@ const ServicesList = () => {
     backgroundRepeat: "no-repeat",
     marginBottom: "2rem",
     paddingTop: "2rem",
+    display: "none"
   };
 
   useEffect(() => {
@@ -93,9 +88,10 @@ const ServicesList = () => {
     <>
     <HomeNav/>
       <section className="our_services" style={shape}>
-        <div className="">
-          <div className="hello_services step-part">
-            <div className="service_top_content primum-steps">
+        <div className="container-fluid">
+          <div className="row ">
+       <div className="col-md-6">
+       <div className="service_top_content ">
               <h4>Services</h4>
              
               <p>
@@ -114,67 +110,10 @@ const ServicesList = () => {
                 Explore
               </button>
             </div>
+       </div>
 
-            <div className="">
-              {/* <div className="services_page_bgone_section">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="750"
-                  height="600"
-                  viewBox="0 0 913 836"
-                  fill="none"
-                >
-                  <path
-                    opacity="0.3"
-                    d="M0 -413.5L1186 -535L1560.5 716L665.836 832.167C462.951 858.51 272.89 727.515 225.302 528.538L0 -413.5Z"
-                    fill="url(#paint0_linear_308_14035)"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_308_14035"
-                      x1="85.5"
-                      y1="-101"
-                      x2="914.5"
-                      y2="785"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#FF0000" />
-                      <stop offset="1" stop-color="#FF9E6E" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-              <div className="services_page_bgtwo_section">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="630"
-                  height="600"
-                  viewBox="0 0 712 858"
-                  fill="none"
-                >
-                  <path
-                    opacity="0.7"
-                    d="M105.742 -349L841.385 26L841.385 858L340.718 782.039C122.749 748.969 -27.3674 545.77 5.07252 327.707L105.742 -349Z"
-                    fill="url(#paint0_linear_308_14036)"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_308_14036"
-                      x1="133"
-                      y1="687.5"
-                      x2="843"
-                      y2="29.0001"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#396ECC" />
-                      <stop offset="0.46385" stop-color="#C7CDF0" />
-                      <stop offset="1" stop-color="#FFE585" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-
-                <div></div>
-              </div> */}
+            <div className="col-md-6">
+             
               <div className="main_picture">
                 <img src="/image/services_page/1.png" class="img-fluid" alt="" srcset=""  />
               </div>
@@ -323,14 +262,15 @@ const ServicesList = () => {
         </div>
       </div> */}
 
-      <div id="Ecommerce" className="service-section " style={bgGredientt}>
+      <div id="Ecommerce" className="service-section " >
         <div className="container-fluid">
+               <h2>
+                  <span>E</span>commerce Retails
+                </h2>
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <div className="service_perticular_content">
-                <h2>
-                  <span>E</span>commerce Retails
-                </h2>
+                
                 <p>
                   In the dynamic world of Ecommerce-Retail, optimizing shipment
                   costs is a pivotal consideration, as it constitutes a
@@ -366,14 +306,12 @@ const ServicesList = () => {
             </div>
             <div className="col-lg-6 col-md-6 col-12">
               <div className="service_perticular_image">
-                <div data-aos="zoom-in">
-                  <img
-                    src="/image/services_page/icons/ecommerce.png"
+              <img
+                    src="/image/gif/ecommerce.gif"
                     alt=""
                     srcset=""
                     className="ecomm1"
                   />
-                </div>
               </div>
             </div>
           </div>
@@ -382,26 +320,25 @@ const ServicesList = () => {
 
       <div
         id="Document"
-        className="service-section Ecommerce"
-        style={bgalternate}
+        className="service-section"
+       
       >
         <div className="container-fluid">
+       
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <div className="service_perticular_image">
-                <div data-aos="zoom-in">
-                  <img
-                    src="/image/services_page/icons/document.png"
+              <img
+                   src="/image/gif/document.gif"
                     alt=""
                     srcset=""
                     className="document"
                   />
-                </div>
               </div>
             </div>
             <div className="col-lg-6 col-md-6 col-12">
               <div className="service_perticular_content">
-                <h2>
+              <h2>
                   <span>D</span>ocument Courier
                 </h2>
                 <p>
@@ -444,12 +381,13 @@ const ServicesList = () => {
 
       <div id="B2C" className="service-section" style={bgAirFright}>
         <div className="container-fluid">
+        <h2>
+                  <span>B2C</span>Air fright
+                </h2>
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <div className="service_perticular_content">
-                <h2>
-                  <span>B2C</span>Air fright
-                </h2>
+                
                 <p>
                   B2C Air Freight, also known as Business-to-Consumer Air
                   Freight, is a sophisticated and efficient solution for

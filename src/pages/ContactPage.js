@@ -15,7 +15,7 @@ const ContactPage = () => {
   };
 
   const coustomer = {
-    background: `url("/image/contactus/coustomer.png")`,
+    background: `url("/image/contactus/customer2.png")`,
     backgroundSize: "contain",
     backgroundPosition: "center",
     width: "100%",
@@ -79,7 +79,7 @@ const ContactPage = () => {
         <div className="row ">
           <div className="col-md-7">
 
-            <div className="touch"> 
+            <div className="colling"> 
               <p><img src="/image/contactus/icon/Group 1419.png" alt="" srcset=""  /> 801-802, 8th Floor, KLJ Tower, Plot No. B-5, NSP, Pitampura, Delhi - 110034</p>
               <p><img src="/image/contactus/icon/Group 1578.png" alt="" srcset=""  />+91 9315033113</p>
               <p> <img src="/image/contactus/icon/Group 1581.png" alt="" srcset=""  />Support@truxcargo.com</p>
@@ -101,21 +101,14 @@ const ContactPage = () => {
         </div>
       </div>
 
-      <div className="container-fluid" style={coustomer}>
-      <div className="row justify-content-center">
-          <div className="col-md-10 col-12 ">
-          <div className=" text-white">
-            <h1>Our customer care is always here.</h1>
-            <p>
-            Customer care self-help page for instant answers to frequently asked questions.
-            </p>
-            <button className="btn btn-light ">Connect Now</button>
-          </div>
-          </div>
+      <div className="container-fluid" >
+        <div className="customer_connect" style={coustomer}>
+
         </div>
+      
       </div>
       <div className="container-fluid" >
-        <div style={signup}> 
+        <div className="contact_signup" style={signup}> 
         <div className="row justify-content-center">
           <div className="col-md-8 col-11 ">
           <div className="shiping_now_inside text-white">

@@ -39,30 +39,27 @@ const ServicesSlider = () => {
             <div className="col-md-12">
               <div class="box-area">
                 <div class="boxes active">
-                  <img src="/image/service_slider/slide_1.jpg" alt="img" />
+                  <img src="/image/service_slider/slide_1.jpeg" alt="img" />
                 </div>
                 <div class="boxes">
-                  <img src="/image/service_slider/slide_2.jpg" alt="img" />
+                  <img src="/image/service_slider/slide_2.jpeg" alt="img" />
                 </div>
                 <div class="boxes">
-                  <img src="/image/service_slider/slide_3.jpg" alt="img" />
+                  <img src="/image/service_slider/slide_3.jpeg" alt="img" />
                 </div>
                 <div class="boxes">
-                  <img src="/image/service_slider/slide_4.jpg" alt="img" />
+                  <img src="/image/service_slider/slide_4.jpeg" alt="img" />
                 </div>
                 <div class="boxes">
-                  <img src="/image/service_slider/slide_5.jpg" alt="img" />
+                  <img src="/image/service_slider/slide_5.png" alt="img" />
                 </div>
                 <div class="boxes">
-                  <img src="/image/service_slider/slide_6.jpg" alt="img" />
+                  <img src="/image/service_slider/slide_6.png" alt="img" />
                 </div>
               </div>
             </div>
           </div>
-
-          
-        </div>
-        <div className="seller_section" style={trusted}>
+          <div className="seller_section" style={trusted}>
         <div className="row justify-content-center">
           <div className="col-md-5 col-11 ">
           <div className="shiping_now_inside_about">
@@ -75,6 +72,9 @@ const ServicesSlider = () => {
           </div>
         </div>
           </div>
+          
+        </div>
+ 
 
 
    

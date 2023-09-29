@@ -40,7 +40,7 @@ const ContactForm = () => {
   };
   return (
     <>
-      <section style={rate}>
+      <section className="contactus_form" style={rate}>
         <Form
           noValidate
           validated={validated}

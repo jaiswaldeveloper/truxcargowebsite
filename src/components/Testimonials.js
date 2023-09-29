@@ -176,7 +176,7 @@ const Testimonials = () => {
           <div className="row justify-content-end">
             <div className="col-md-5 step-part">
               <div className="primum-steps">
-                <div className="">
+                <div className="review_quotes">
                   <img
                     src="/image/qoutes.svg"
                     alt=""

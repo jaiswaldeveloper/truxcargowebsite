@@ -156,8 +156,8 @@ const AboutPage = () => {
         </div>
       </div>
       <ServicesSlider />
-      <div className="seller_section margin_top_bottom" style={buissines}>
         <div className="container-fluid">
+      <div className="seller_section margin_top_bottom" style={buissines}>
           <div className="row ">
             <div className="col-md-10 col-12 ">
               <div className="shiping_now_inside_bussiness ">

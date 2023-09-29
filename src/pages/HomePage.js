@@ -28,6 +28,8 @@ import HomeNav from "../components/HomeNav";
 const HomePage = () => {
   const newsletterProps = {
     background: "linear-gradient( 140deg, rgb(185 150 232), rgb(175 184 228), rgb(104 191 139)",
+    content: "Be in the know",
+    paragraph: "Stay informed about all developments and product updates at Truxcargo"
     // backgroundImage,
     // content: 'Subscribe to our newsletter for the latest updates!',
   };

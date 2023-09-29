@@ -31,7 +31,7 @@ const TimeLine = () => {
                 <h6>2019</h6>
                 <div className="foundation_2019">
                <ul>
-                <li>Introduced shipping portal</li>
+                <li>2019 Introduced shipping portal</li>
                 <li>Powered With AI</li>
                </ul>
               </div>
@@ -39,7 +39,7 @@ const TimeLine = () => {
               <div className="foundation_middle_upper">
               <div className="foundation_2020">
                <ul>
-                <li>wadsfdscdvfsbgd</li>
+                <li>2020</li>
                 <li>Powered With AI</li>
                </ul>
               </div>

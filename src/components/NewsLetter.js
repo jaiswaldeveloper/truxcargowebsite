@@ -1,8 +1,9 @@
 import React from "react";
 
-const NewsLetter = ({ background }) => {
+const NewsLetter = ({ background, content, paragraph }) => {
   const newsletterStyle = {
     background,
+    content,
     // backgroundImage: `url(${backgroundImage})`,
     // Add other styles for layout, padding, etc.
   };
@@ -15,10 +16,10 @@ const NewsLetter = ({ background }) => {
               <div className="newsletterwrapper" style={newsletterStyle}>
                 <div className="newsletterinside">
                   <h2>
-                  Be in the know
+                     {content}
                   </h2>
                   <p>
-                  Stay informed about all developments and product updates at Truxcargo
+                 {paragraph}
                   </p>
                   <form>
                     <input
