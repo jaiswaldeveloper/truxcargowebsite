@@ -3,7 +3,7 @@ import { Navigate, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { format} from "date-fns";
-
+import HomeNav from "../components/HomeNav"
 const BlogDetails = () => {
   const { id: urlId } = useParams();
   // const { id } = useParams();
@@ -84,7 +84,8 @@ const BlogDetails = () => {
 
   return (
     <>
-      <div className="container mt-5">
+    <HomeNav/>
+      <div className="container-fluid margin_top_bottom">
         <div className="row">
           <div className="col-md-9">
             <div className="blog-details">
@@ -99,7 +100,7 @@ const BlogDetails = () => {
           </div>
         </div>
       </div>
-      <div className="container mt-5">
+      <div className="container-fluid mt-5">
         <h2>Our Latest Blogs</h2>
         <div className="row">
         

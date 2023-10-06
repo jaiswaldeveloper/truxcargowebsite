@@ -6,12 +6,13 @@ import TimeLine from "../components/TimeLine";
 const AboutPage = () => {
   const trusted = {
     background: `url("/image/aboutus/future.png")`,
-    backgroundSize: "contain",
+    backgroundSize: "cover",
     backgroundPosition: "center",
     width: "100%",
-    height: "500px",
+    // height: "500px",
     backgroundRepeat: "no-repeat",
     padding: "20px",
+    borderRadius:"20px"
   };
   const buissines = {
     background: `url("/image/aboutus/buissines.png")`,
@@ -136,19 +137,19 @@ const AboutPage = () => {
       </div>
 
       <TimeLine />
-      <div className="future_section margin_top_bottom" style={trusted}>
         <div className="container-fluid">
+      <div className="future_section margin_top_bottom" style={trusted}>
           <div className="row justify-content-center">
             <div className="col-md-8">
-              <h1 className="my-4">Future</h1>
+              <h1 className="my-4">Our Company's Bright Future</h1>
               <div className="wrapper_future">
                 <ul>
-                  <li>APP Launch</li>
-                  <li>Crossed 2 million shipment+</li>
-                  <li>Fleet - 140</li>
-                  <li>SOON TO BE laughed international shipment</li>
-                  <li>10k onboarded transporters</li>
-                  <li>Hub count more 40</li>
+                  <li><b>New App Launch:</b> We recently launched our app, and it's been a big hit with lots of people liking it.</li>
+                  <li> <b>Over 2 Million Shipments:</b>We've shipped more than 2 million packages, which is a huge number!</li>
+                  <li><b>Lots of Vehicles: </b>We now have 140 vehicles to make sure we can deliver things to you quickly and safely.</li>
+                  <li><b>Going Global Soon: </b>We're planning to start shipping things internationally, so you can send and receive stuff all over the world.</li>
+                  <li><b>Partnering with 10,000 Transporters:</b> We've teamed up with 10,000 transporters who are ready to help us get your things where they need to go.</li>
+                  <li><b>More than 40 Hubs:</b> We have more than 40 hubs where we can sort and organize your shipments to make sure they get to you on time.</li>
                 </ul>
               </div>
             </div>

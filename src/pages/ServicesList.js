@@ -3,20 +3,19 @@ import React, { useEffect } from "react";
 // import ServicesBanner from "../components/ServicesBanner";
 // import DATA from "../Data";
 import AOS from "aos";
-import NewsLetter from "../components/NewsLetter"
+import NewsLetter from "../components/NewsLetter";
 import "aos/dist/aos.css"; // Import the CSS for AOS
 import { Link } from "react-scroll";
 
 import HomeNav from "../components/HomeNav";
 const ServicesList = () => {
   const newsletterPropsService = {
-    background: "linear-gradient(107deg, rgb(200 157 255) 0%, rgb(186 193 229) 45.83%, rgb(220 208 242) 103.26%)",
-
+    background:
+      "linear-gradient(107deg, rgb(200 157 255) 0%, rgb(186 193 229) 45.83%, rgb(220 208 242) 103.26%)",
 
     // backgroundImage,
     // content: 'Subscribe to our newsletter for the latest updates!',
   };
-
 
   const shape = {
     background: `url("/image/gif/shape.gif")`,
@@ -25,60 +24,25 @@ const ServicesList = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    padding: "7rem 0",
+    padding: "10rem 0",
   };
-  // const bgGredientt = {
-  //   background: `url("/image/services_page/icons/Rectangle_back.png")`,
-  //   width: "100%",
-  //   height: "100vh",
-  //   backgroundSize: "contain",
-  //   backgroundPosition: "right",
-  //   backgroundRepeat: "no-repeat",
-  //   paddingTop: "2rem",
-  // };
+
 
   const bgAirFright = {
-    // background: `url("/image/services_page/icons/air_freght_rectangle2.png")`,
-    // width: "100%",
-    // height: "100vh",
-    // backgroundSize: "contain",
-    // backgroundSize: "600px 600px",
-    // backgroundPosition: "right",
-    // backgroundRepeat: "no-repeat",
-    // paddingTop: "2rem",
+ 
     // display: "none"
   };
   const bgalternateFullTruck = {
-    background: `url("/image/services_page/icons/fulll_truck_rectangle.png")`,
-
-    width: "100%",
-    height: "100vh",
-    // backgroundSize: "contain",
-    backgroundSize: "600px 700px",
-    backgroundPosition: "left",
-    backgroundRepeat: "no-repeat",
-    paddingTop: "2rem",
-    display: "none"
+ 
+    // display: "none"
   };
   const bgPartTruck = {
-    background: `url("/image/services_page/icons/bg_parttruck2.png")`,
-    width: "100%",
-    height: "100vh",
-    backgroundSize: "500px 500px",
-    backgroundPosition: "right",
-    backgroundRepeat: "no-repeat",
-    display: "none"
+
+    // display: "none"
   };
   const bgalternatefleet = {
-    background: `url("/image/services_page/icons/fleet_bg.png")`,
-    width: "100%",
-    height: "100vh",
-    backgroundSize: "500px 500px",
-    backgroundPosition: "left",
-    backgroundRepeat: "no-repeat",
-    marginBottom: "2rem",
-    paddingTop: "2rem",
-    display: "none"
+
+    // display: "none",
   };
 
   useEffect(() => {
@@ -86,36 +50,41 @@ const ServicesList = () => {
   }, []);
   return (
     <>
-    <HomeNav/>
+      <HomeNav />
       <section className="our_services" style={shape}>
         <div className="container-fluid">
           <div className="row ">
-       <div className="col-md-6">
-       <div className="service_top_content ">
-              <h4>Services</h4>
-             
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                iusto voluptates eos sed, harum adipisci tempore? Odit a quidem
-                nihil repudiandae eveniet id velit quos omnis magnam
-                necessitatibus error explicabo, atque beatae voluptate nesciunt
-                placeat sint dicta saepe excepturi? Esse voluptatem culpa
-                dignissimos vel veniam quidem numquam quod deserunt aliquid.
-              </p>
-              <button
-                class="button-56 btn_service_page"
-                role="button"
-                type="button"
-              >
-                Explore
-              </button>
+            <div className="col-md-6">
+              <div className="service_top_content ">
+                <h4>Services</h4>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                  iusto voluptates eos sed, harum adipisci tempore? Odit a
+                  quidem nihil repudiandae eveniet id velit quos omnis magnam
+                  necessitatibus error explicabo, atque beatae voluptate
+                  nesciunt placeat sint dicta saepe excepturi? Esse voluptatem
+                  culpa dignissimos vel veniam quidem numquam quod deserunt
+                  aliquid.
+                </p>
+                <button
+                  class="button-56 btn_service_page"
+                  role="button"
+                  type="button"
+                >
+                  Explore
+                </button>
+              </div>
             </div>
-       </div>
 
             <div className="col-md-6">
-             
               <div className="main_picture">
-                <img src="/image/services_page/1.png" class="img-fluid" alt="" srcset=""  />
+                <img
+                  src="/image/services_page/1.png"
+                  class="img-fluid"
+                  alt=""
+                  srcset=""
+                />
               </div>
             </div>
           </div>
@@ -124,122 +93,122 @@ const ServicesList = () => {
       <div className="container-fluid">
         <div className="all_services ">
           <div className="all_serives_white">
-          <div className=" ">
-            <Link
-              to="Ecommerce"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              <div className="barrier ecom_barrier_none">
-                <div className="all_services_card slide-fwd-center">
-                  <img
-                    src="/image/services_page/icons/1.png"
-                    alt=""
-                    srcset=""
-                  />
-                  <h5>Ecommerce-Retail</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Quidem, similique?
-                  </p>
+            <div className=" ">
+              <Link
+                to="Ecommerce"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                <div className="barrier ecom_barrier_none">
+                  <div className="all_services_card slide-fwd-center">
+                    <img
+                      src="/image/services_page/icons/1.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <h5>Ecommerce-Retail</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Quidem, similique?
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </Link>
-          </div>
-          <div className="">
-            <Link to="Document">
-              <div className="barrier">
-                <div className="all_services_card ">
-                  <img
-                    src="/image/services_page/icons/2.png"
-                    alt=""
-                    srcset=""
-                  />
-                  <h5>Document Courier</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Quidem, similique?
-                  </p>
+              </Link>
+            </div>
+            <div className="">
+              <Link to="Document">
+                <div className="barrier">
+                  <div className="all_services_card ">
+                    <img
+                      src="/image/services_page/icons/2.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <h5>Document Courier</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Quidem, similique?
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </Link>
-          </div>
+              </Link>
+            </div>
 
-          <div className=" ">
-            <div className="barrier  ">
-              <Link to="B2C">
-                <div className="all_services_card">
-                  <img
-                    src="/image/services_page/icons/3.png"
-                    alt=""
-                    srcset=""
-                  />
-                  <h5>B2C Air Freight</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Quidem, similique?
-                  </p>
-                </div>
-              </Link>
+            <div className=" ">
+              <div className="barrier  ">
+                <Link to="B2C">
+                  <div className="all_services_card">
+                    <img
+                      src="/image/services_page/icons/3.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <h5>B2C Air Freight</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Quidem, similique?
+                    </p>
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <div className="">
+              <div className="barrier">
+                <Link to="Full_Truck">
+                  <div className="all_services_card">
+                    <img
+                      src="/image/services_page/icons/4.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <h5>Full Truck Load</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Quidem, similique?
+                    </p>
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <div className="col-md-2 ">
+              <div className="barrier">
+                <Link to="Part_Truck">
+                  <div className="all_services_card">
+                    <img
+                      src="/image/services_page/icons/5.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <h5>Part Truck Load</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Quidem, similique?
+                    </p>
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <div className="">
+              <div className="barrier">
+                <Link to="Hire_fleet">
+                  <div className="all_services_card ">
+                    <img
+                      src="/image/services_page/icons/6.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <h5>Hire a Fleet</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Quidem, similique?
+                    </p>
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
-          <div className="">
-            <div className="barrier">
-              <Link to="Full_Truck">
-                <div className="all_services_card">
-                  <img
-                    src="/image/services_page/icons/4.png"
-                    alt=""
-                    srcset=""
-                  />
-                  <h5>Full Truck Load</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Quidem, similique?
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </div>
-          <div className="col-md-2 ">
-            <div className="barrier">
-              <Link to="Part_Truck">
-                <div className="all_services_card">
-                  <img
-                    src="/image/services_page/icons/5.png"
-                    alt=""
-                    srcset=""
-                  />
-                  <h5>Part Truck Load</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Quidem, similique?
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </div>
-          <div className="">
-            <div className="barrier">
-              <Link to="Hire_fleet">
-                <div className="all_services_card ">
-                  <img
-                    src="/image/services_page/icons/6.png"
-                    alt=""
-                    srcset=""
-                  />
-                  <h5>Hire a Fleet</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Quidem, similique?
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </div>
-        </div>
         </div>
       </div>
       {/* <div className="service-section">
@@ -262,15 +231,15 @@ const ServicesList = () => {
         </div>
       </div> */}
 
-      <div id="Ecommerce" className="service-section " >
+      <div id="Ecommerce" className="service-section ">
         <div className="container-fluid">
-               <h2>
-                  <span>E</span>commerce Retails
-                </h2>
+          
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <div className="service_perticular_content">
-                
+              <h2>
+            <span>E</span>commerce Retails
+          </h2>
                 <p>
                   In the dynamic world of Ecommerce-Retail, optimizing shipment
                   costs is a pivotal consideration, as it constitutes a
@@ -306,39 +275,34 @@ const ServicesList = () => {
             </div>
             <div className="col-lg-6 col-md-6 col-12">
               <div className="service_perticular_image">
-              <img
-                    src="/image/gif/ecommerce.gif"
-                    alt=""
-                    srcset=""
-                    className="ecomm1"
-                  />
+                <img
+                  src="/image/gif/ecommerce.gif"
+                  alt=""
+                  srcset=""
+                  className="ecomm1"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div
-        id="Document"
-        className="service-section"
-       
-      >
+      <div id="Document" className="service-section">
         <div className="container-fluid">
-       
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <div className="service_perticular_image">
-              <img
-                   src="/image/gif/document.gif"
-                    alt=""
-                    srcset=""
-                    className="document"
-                  />
+                <img
+                  src="/image/gif/document.gif"
+                  alt=""
+                  srcset=""
+                  className="document"
+                />
               </div>
             </div>
             <div className="col-lg-6 col-md-6 col-12">
               <div className="service_perticular_content">
-              <h2>
+                <h2>
                   <span>D</span>ocument Courier
                 </h2>
                 <p>
@@ -381,13 +345,13 @@ const ServicesList = () => {
 
       <div id="B2C" className="service-section" style={bgAirFright}>
         <div className="container-fluid">
-        <h2>
-                  <span>B2C</span>Air fright
-                </h2>
+         
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <div className="service_perticular_content">
-                
+              <h2>
+            <span>B2C</span>Air fright
+          </h2>
                 <p>
                   B2C Air Freight, also known as Business-to-Consumer Air
                   Freight, is a sophisticated and efficient solution for
@@ -522,6 +486,7 @@ route and reduces transit times.</p> */}
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
+           
               <div className="service_perticular_content">
                 <h2>
                   <span>P</span>art Truck Load
@@ -564,24 +529,22 @@ route and reduces transit times.</p> */}
             </div>
             <div className="col-lg-6 col-md-6 col-12">
               <div className="service_perticular_image parttruck_section">
-                <div
-                  data-aos="fade-left"
-                  data-aos-offset="300"
-                  data-aos-easing="ease-in-sine"
-                >
-                  <img
-                    src="/image/services_page/icons/parttruckload.png"
-                    alt=""
-                    srcset=""
-                    className="parttruck"
-                  />
-                </div>
+              <div data-aos="fade-left">
+                 
+             
+                 <img
+                   src="/image/services_page/icons/parttruckload.png"
+                   alt=""
+                   srcset=""
+                   className="parttruck"
+                 />
+               </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div id="Hire_fleet" className="service-section" style={bgalternatefleet}>
+      </div>  
+      <div id="Hire_fleet" className="service-section margin_top_bottom" style={bgalternatefleet}>
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
@@ -626,7 +589,7 @@ route and reduces transit times.</p> */}
           </div>
         </div>
       </div>
-      <NewsLetter {...newsletterPropsService}/>
+      <NewsLetter {...newsletterPropsService} />
     </>
   );
 };

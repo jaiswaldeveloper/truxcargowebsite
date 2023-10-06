@@ -5,9 +5,9 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "../assets/images/logo.png";
 import { Link, NavLink } from "react-router-dom";
-import animationmenu from "../assets/images/menu-solution.json"
+// import animationmenu from "../assets/images/menu-solution.json"
 
-import Lottie from 'lottie-react';
+// import Lottie from 'lottie-react';
 // import manimg from "../assets/images/123.png";
 const HomeNav = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -118,15 +118,15 @@ const HomeNav = () => {
                         </NavDropdown.Item>
                       </div>
                       <div className="solution_image">
-                      <div className="lottie_animation">
+                      {/* <div className="lottie_animation">
                           <Lottie
                               animationData={animationmenu}
                               loop={true}
                               autoplay={true}
                               style={{ width: '140px'}}
                             />
-                          </div>
-                          {/* <img src="/image/solutions/solution-nav.svg" alt="" srcSet="" /> */}
+                          </div> */}
+                          <img src="/image/solutions/solution-nav.svg" alt="" srcSet="" />
                       </div>
                     </div>
                 </NavDropdown>

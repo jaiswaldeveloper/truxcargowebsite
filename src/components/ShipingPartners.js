@@ -54,7 +54,7 @@ const ShipingPartners = () => {
           infinite={true}
           responsive={responsive}
           autoPlay={true}
-          autoPlaySpeed={1000}
+         
     
         >
           <div>
