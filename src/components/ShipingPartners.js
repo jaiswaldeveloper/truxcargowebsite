@@ -50,12 +50,14 @@ const ShipingPartners = () => {
         <h4 >Our Delivery Partners</h4>
         <Carousel
           style={bg_partners}
+          swipeable={false}
+  draggable={false}
+
           arrows={false}
           infinite={true}
           responsive={responsive}
           autoPlay={true}
-         
-    
+      
         >
           <div>
             <img src="/image/partner_logo/xpessbees.jpg" className="w-100" alt="" />

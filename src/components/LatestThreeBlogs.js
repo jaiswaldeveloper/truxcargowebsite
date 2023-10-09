@@ -62,10 +62,16 @@ const LatestThreeBlogs = () => {
                         20
                       )}
                     />
-                    <div className="read-blog">
-                      <small>{format(new Date(items.date), "MMM dd, yyyy")}</small>
-     
-                    </div>
+                       <div className="read-blog">
+                            <small>
+                              {format(new Date(items.date), "MMMM dd, yyyy")}
+                            </small>
+                            <small>
+                              {" "}
+                              {items.view } view <i class="fa-solid fa-eye"></i>
+                            </small>
+                           
+                          </div>
                   </div>
                 </div>
               </div>

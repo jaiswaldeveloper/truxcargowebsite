@@ -58,7 +58,7 @@ const Calculator = () => {
      {/* <h3>Calculate Your Shipping Costs Now </h3> */}
 
      <div className="form_calcutor" >
-       <Form.Group controlId="validationCustom01">
+       <Form.Group controlId="validationCustom01" className="w-100">
          <Form.Label>Origin Pincode</Form.Label>
          <Form.Control
            required
@@ -72,7 +72,7 @@ const Calculator = () => {
          </Form.Control.Feedback>
        </Form.Group>
 
-       <Form.Group controlId="validationCustom02">
+       <Form.Group controlId="validationCustom02" className="w-100">
          <Form.Label>Destination Pincode</Form.Label>
          <Form.Control
            required
@@ -87,7 +87,7 @@ const Calculator = () => {
        </Form.Group>
      </div>
      <div className="form_calcutor">
-       <Form.Group>
+       <Form.Group className="w-100">
          <Form.Label>Payment Mode</Form.Label>
 
          <Form.Select>
@@ -102,7 +102,7 @@ const Calculator = () => {
          </Form.Control.Feedback>
        </Form.Group>
 
-       <Form.Group controlId="validationCustom03">
+       <Form.Group controlId="validationCustom03" className="w-100">
          <Form.Label>Approx Weight(Kg)</Form.Label>
          <Form.Control
            required
@@ -116,7 +116,7 @@ const Calculator = () => {
        </Form.Group>
      </div>
      <div className="form_calcutor">
-       <Form.Group controlId="validationCustom04">
+       <Form.Group controlId="validationCustom04" className="w-100">
          <Form.Label>Invoice Value</Form.Label>
          <Form.Control
            required
@@ -128,7 +128,7 @@ const Calculator = () => {
            Please Enter Invoice Value
          </Form.Control.Feedback>
        </Form.Group>
-       <Form.Group controlId="validationCustom05">
+       <Form.Group controlId="validationCustom05" className="w-100">
          <Form.Label>Qty</Form.Label>
          <Form.Control required type="number" placeholder="Enter Qty" />
          <Form.Control.Feedback></Form.Control.Feedback>
@@ -140,7 +140,7 @@ const Calculator = () => {
      <div className="dimension_part">
        <h5>Dimensions (cm)</h5>
        <div className="form_calcutor">
-         <Form.Group controlId="validationCustom06">
+         <Form.Group controlId="validationCustom06" className="w-100">
            <Form.Label>Length</Form.Label>
            <Form.Control
              required
@@ -155,7 +155,7 @@ const Calculator = () => {
            </Form.Control.Feedback>
          </Form.Group>
 
-         <Form.Group controlId="validationCustom07">
+         <Form.Group controlId="validationCustom07" className="w-100">
            <Form.Label>Width</Form.Label>
            <Form.Control
              required
@@ -169,7 +169,7 @@ const Calculator = () => {
              Please Enter Width
            </Form.Control.Feedback>
          </Form.Group>
-         <Form.Group controlId="validationCustom02">
+         <Form.Group controlId="validationCustom08" className="w-100" >
            <Form.Label>Height</Form.Label>
            <Form.Control
              required

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { format} from "date-fns";
-import HomeNav from "../components/HomeNav"
+import { format } from "date-fns";
+import HomeNav from "../components/HomeNav";
 const BlogDetails = () => {
   const { id: urlId } = useParams();
   // const { id } = useParams();
@@ -12,12 +12,11 @@ const BlogDetails = () => {
   const [error, setError] = useState(false);
   const [topLatestBlogs, setTopLatestBlogs] = useState([]);
 
-    
   const navigate = useNavigate();
-  
+
   const handleOnClick = (blogId) => {
     navigate(`/blogPost/${blogId}`);
-  }
+  };
   useEffect(() => {
     fetchData(urlId); // Fetch data based on the URL ID
   }, [urlId]); // Re-fetch data when the URL ID changes
@@ -79,19 +78,18 @@ const BlogDetails = () => {
     return truncatedTitle;
   }
 
-  
   const { pic, date, title, desc } = blogPost;
 
   return (
     <>
-    <HomeNav/>
+      <HomeNav />
       <div className="container-fluid margin_top_bottom">
         <div className="row">
           <div className="col-md-9">
             <div className="blog-details">
               <h2>{title}</h2>
-              <h6>{format(new Date(date), 'MMMM dd, yyyy')}</h6>
-              <img src={pic} alt={title}  />
+              <h6>{format(new Date(date), "MMMM dd, yyyy")}</h6>
+              <img src={pic} srcset="" alt={title} />
 
               <p>
                 <div dangerouslySetInnerHTML={{ __html: desc }}></div>
@@ -103,24 +101,37 @@ const BlogDetails = () => {
       <div className="container-fluid mt-5">
         <h2>Our Latest Blogs</h2>
         <div className="row">
-        
           {topLatestBlogs.map((blog) => (
             <div className="col-md-4" key={blog.id}>
               <div className="blog-card">
                 <div className="blog_main_image">
-                  <img src={blog.pic} alt={blog.title} className="w-100" />
+                  <img
+                    src={blog.pic}
+                    alt={blog.title}
+                    srcset=""
+                    className="w-100"
+                  />
                 </div>
                 <div className="blog-content">
-                
-                    <h4 onClick={() => handleOnClick(blog.id)}>{truncateTitle(blog.title, 8)}</h4>
-                 
+                  <h4 onClick={() => handleOnClick(blog.id)}>
+                    {truncateTitle(blog.title, 8)}
+                  </h4>
+
                   <div
                     dangerouslySetInnerHTML={createTruncatedMarkup(
                       blog.desc,
                       20
                     )}
                   />
-                  <small>{format(new Date(blog.date), "MMMM dd, yyyy")}</small>
+                  <div className="read-blog">
+                    <small>
+                      {format(new Date(blog.date), "MMMM dd, yyyy")}
+                    </small>
+                    <small>
+                      {" "}
+                      {blog.view} view <i class="fa-solid fa-eye"></i>
+                    </small>
+                  </div>
                 </div>
               </div>
             </div>

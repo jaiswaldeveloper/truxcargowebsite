@@ -5,7 +5,7 @@ const Shimmer = () => {
   return (
     <>
       <section className="blog-section mt-5">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row ">
             <div className="col-md-8">
               <div className="row">

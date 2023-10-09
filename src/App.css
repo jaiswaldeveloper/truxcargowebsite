@@ -1698,7 +1698,7 @@ dd {
   /* font-weight: 600 !important; */
   color: #ffffff !important;
   padding: 10px 25px !important;
-
+  text-transform: capitalize;
   font-size: 17px !important;
 }
 
@@ -2129,7 +2129,10 @@ dd {
   width: 12px;
   margin-left: 5px;
 }
-
+.read-blog{
+  display: flex;
+  gap: 25px;
+}
 .read-blog a:hover {
   color: #7939cc !important;
 }
@@ -2176,7 +2179,7 @@ button.page-link.page-design {
   border-radius: 6px;
   height: 500px;
   overflow: hidden;
-  width: 350px;
+  width: 400px;
   margin: 40px auto;
 
   .shimmerBG {
@@ -2324,12 +2327,12 @@ button.page-link.page-design {
 .blog-content .limit p span {
   font-size: 17px !important;
   text-align: start !important;
-  margin: 20px 0;
+  /* margin: 20px 0; */
 }
 
 .blog-card .blog-content h4 {
   width: 100%;
-  height: 75px;
+  /* height: 75px; */
 }
 
 .blog-details img {
@@ -3403,14 +3406,14 @@ button.btn.btn_newletter {
 
 .form_calcutor {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .calculator_section {
   border-radius: 16px;
-  padding: 3rem;
+  padding: 2rem;
   background: linear-gradient(to top, #fff1eb 0%, #9e8bff 100%);
 }
 
@@ -3422,11 +3425,11 @@ button.btn.btn_newletter {
       rgba(255, 255, 255, 0) 100%);
   backdrop-filter: blur(21px);
   border: 1px solid #fff;
-  padding: 3rem;
+  padding: 2rem;
 }
 
-.calculator_section form .form-group input {
-  line-height: 1.8;
+.calculator_section .form_calcutor input {
+  line-height: 2 !important;
 }
 
 .calculator_section label {
@@ -3475,12 +3478,12 @@ button.btn.btn_newletter {
 
 .userInputHeight {
   position: absolute;
-  right: 35%;
+  right: 34%;
   top: 35%;
 }
 
 .calculator_section .form-select {
-  width: 228px;
+ line-height: 2;
 }
 
 .calculator_section .form-select .options {
@@ -4235,9 +4238,6 @@ button.btn.btn_newletter {
     padding: 10px;
   }
 
-  .calculator_section .form-select {
-    width: 138px;
-  }
 
   .rate-calculator2 {
     padding: 2rem 0;

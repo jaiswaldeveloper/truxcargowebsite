@@ -2,28 +2,18 @@ import React, { useEffect, useState } from "react";
 import Pagination from "./Pagination";
 import Shimmer from "../components/Shimmer";
 import { Link } from "react-router-dom";
-
-import {  format } from 'date-fns'
+import { format } from "date-fns";
 import HomeNav from "../components/HomeNav";
 
-
-
-const BlogList = () => {
-  // const styes = {
-  //   backgroundColor: "#dee2e6",
-  //   width: "100%",
-  //   height: "200px",
- 
-  // };
+const BlogList = ({ id }) => {
   const [blogCard, setBlogCard] = useState([]);
-
   const [loading, setLoading] = useState(true);
   const [Error, setError] = useState(false);
-
   const itemsPerPage = 6; // Number of items to display per page
   const [currentPage, setCurrentPage] = useState(1);
 
-  
+
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -34,6 +24,7 @@ const BlogList = () => {
         "https://b2b.truxcargo.com/api/truxapi/blog"
       );
       const datajson = await response.json();
+      console.log(datajson)
       setBlogCard(datajson.data);
 
       setLoading(false);
@@ -57,10 +48,10 @@ const BlogList = () => {
     const words = title.split(" ");
     const truncatedTitle = words.slice(0, wordCount).join(" ") + "...";
     return truncatedTitle;
-}
+  }
 
   if (loading) {
-    return  <Shimmer/>;
+    return <Shimmer />;
   }
 
   if (Error) {
@@ -78,10 +69,9 @@ const BlogList = () => {
     currentPage * itemsPerPage
   );
 
-  
   return (
     <>
-<HomeNav/>
+      <HomeNav />
       {/* <div className="blog-banner" style={styes}></div> */}
       <section className="blog-section mt-5">
         <div className="container-fluid">
@@ -89,52 +79,64 @@ const BlogList = () => {
             <div className="col-md-8">
               <div className="row">
                 {paginatedBlogCards.map((item) => (
-                  <div className="col-md-6" key={item.id}>
-                    <div className="blog-card" >
-                      <div className="blog_main_image">
-                        <img src={item.pic} alt="" className="w-100" />
-                      </div>
-                      <div className="blog-content">
-                        <Link to={`/blogPost/${item.id}`}>
-                          <h4>{truncateTitle (item.title, 9)}</h4>
-                          </Link> 
+                  <div className="col-md-6" key={item.id} >
+                      <div className="blog-card"  >
+                        <div className="blog_main_image">
+                          <img src={item.pic} srcSet="" alt="" className="w-100" />
+                        </div>
+                        <div className="blog-content">
+                    <Link to={`/blogPost/${item.id}`}>
+                          <h4  >{truncateTitle(item.title, 9)}</h4>
 
-                        <div
-                          className="limit"
-                          dangerouslySetInnerHTML={createTruncatedMarkup(
-                            item.desc,
-                            15
-                          )}
-                        />
-                        <div className="read-blog">
-                        <small>{format(new Date(item.date), 'MMMM dd, yyyy')}</small>
-                          {/* <a >Read more <img src="/featured-icon/diagonal-arrow.png" alt="" className="arrow-read"   /></a> */}
+                          </Link>
+                          <div
+                            className="limit"
+                            dangerouslySetInnerHTML={createTruncatedMarkup(
+                              item.desc,
+                              20
+                            )}
+                          />
+                          <div className="read-blog">
+                            <small>
+                              {format(new Date(item.date), "MMMM dd, yyyy")}
+                            </small>
+                            <small>
+                              {" "}
+                              {item.view } view <i class="fa-solid fa-eye"></i>
+                            </small>
+                           
+                          </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4">
               <div className="blog-ads-banner">
-                <img src="/image/Website Blog Banner.png" alt="" className="w-100"/>
-                <img src="/image/Website Blog Banner.png" alt="" className="w-100"/>
-              
+                <img
+                  src="/image/Website Blog Banner.png"
+                  alt=""
+                  className="w-100"
+                />
+                <img
+                  src="/image/Website Blog Banner.png"
+                  alt=""
+                  className="w-100"
+                />
               </div>
             </div>
           </div>
         </div>
 
         <Pagination
-        currentPage={currentPage}
-        totalPages={totalPages}
-        onPageChange={handlePageChange}
-      />
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={handlePageChange}
+        />
       </section>
 
       {/* <BlogDetails topLatestBlogs={topLatestBlogs}/> */}
-     
     </>
   );
 };
