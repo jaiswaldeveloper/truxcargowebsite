@@ -2,6 +2,7 @@ import React from "react";
 
 import Navigation from "../components/Navigation";
 import ContactForm from "../components/ContactForm";
+import { Helmet } from "react-helmet";
 
 const ContactPage = () => {
   const contact = {
@@ -36,6 +37,7 @@ const ContactPage = () => {
   };
   return (
     <>
+    <Helmet><title>Comapany - Contact us</title></Helmet>
       <Navigation />
       
       <section className="contact_section" style={contact}>
@@ -75,10 +77,10 @@ const ContactPage = () => {
       </div>
 
       <div className="container-fluid margin_top_bottom">
-        <h2>Get In Touch</h2>
+      
         <div className="row ">
           <div className="col-md-7">
-
+          <h2 className="mb-5">Get In Touch</h2>
             <div className="colling"> 
               <p><img src="/image/contactus/icon/Group 1419.png" alt="" srcset=""  /> 801-802, 8th Floor, KLJ Tower, Plot No. B-5, NSP, Pitampura, Delhi - 110034</p>
               <p><img src="/image/contactus/icon/Group 1578.png" alt="" srcset=""  />+91 9315033113</p>

@@ -2,6 +2,7 @@ import React from "react";
 
 import Navigation from "../components/Navigation";
 import NewsLetter from "../components/NewsLetter";
+import { Helmet } from "react-helmet";
 
 const Media = () => {
   const newsletterProps = {
@@ -35,6 +36,7 @@ const Media = () => {
 
   return (
     <>
+    <Helmet><title>Media</title></Helmet>
       <Navigation />
       <section className="media_section" style={media}>
         <div className="container-fluid">

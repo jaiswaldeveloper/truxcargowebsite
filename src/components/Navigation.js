@@ -50,6 +50,9 @@ const Navigation = () => {
           onMouseEnter={() => setShowDropdown(false)}
         >
           <Container fluid>
+          <Navbar.Toggle aria-controls="navbarScroll" >
+              {/* <p>Menu</p> */}
+            </Navbar.Toggle>
             <Navbar.Brand>
               <NavLink to="/">
                 <img src={logo} alt="photo-error" className="trux-logo" />
@@ -57,15 +60,13 @@ const Navigation = () => {
             </Navbar.Brand>
            <div className="nav_reg">
            <Link to="https://b2b.truxcargo.com/register/">
-                  <button className="button-63" role="button">
+                  <button className="btn btn-outline-light reg_btn" role="button">
                    Register
               
                   </button>
                 </Link>
            </div>
-            <Navbar.Toggle aria-controls="navbarScroll" >
-              {/* <p>Menu</p> */}
-            </Navbar.Toggle>
+          
             <Navbar.Collapse id="navbarScroll">
               <Nav className="mx-auto my-2 my-lg-0">
                 <NavLink to="/service" className="nav-link">

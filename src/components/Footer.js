@@ -91,18 +91,28 @@ const Footer = () => {
                 </h3>
               </div>
               <ul>
+              <div className="d-flex">
+              <i className="fa-solid fa-location-dot"></i>
                 <p>
-                  <i className="fa-solid fa-location-dot"></i>01-802, 8th Floor,
+                  01-802, 8th Floor,
                   KLJ Tower, Plot No. B-5, NSP, Pitampura, Delhi - 110034
                 </p>
+              </div>
+
+              <div className="d-flex">
+              <i className="fa-solid fa-envelope"></i>
                 <p>
-                  {" "}
-                  <i className="fa-solid fa-envelope"></i>support@truxcargo.com
+                support@truxcargo.com
                 </p>
+              </div>
+              <div className="d-flex">
+              <i className="fa-solid fa-phone"></i>
                 <p>
-                  {" "}
-                  <i className="fa-solid fa-phone"></i> +91-9315033113
+                +91-9315033113
                 </p>
+              </div>
+              
+             
               </ul>
           
             </div>
@@ -111,7 +121,9 @@ const Footer = () => {
           <div className="row justify-content-end">
           <div className="col-md-4"></div>
             <div className="col-md-4">
-            <div className="social-media ">
+
+
+            <div className=" button-85 social-media ">
               <h5>Follow us</h5>
                 <img src="/image/social_media/twiter.svg"/>
                 <img src="/image/social_media/facebook.svg"/>

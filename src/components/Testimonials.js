@@ -176,14 +176,7 @@ const Testimonials = () => {
           <div className="row justify-content-end">
             <div className="col-md-5 step-part">
               <div className="primum-steps">
-                <div className="review_quotes">
-                  <img
-                    src="/image/qoutes.svg"
-                    alt=""
-                    srcset=""
-                    className="w-25"
-                  />
-                </div>
+              
                 <h4>Our Customers Love what we do</h4>
                 <span>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam

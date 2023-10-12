@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import { Accordion } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 
 const PickupLocation = () => {
   const bg_early = {
@@ -15,6 +16,7 @@ const PickupLocation = () => {
 
   return (
     <>
+        <Helmet><title>Multiple Pickup Locations</title></Helmet>
       <Navigation />
       <div className="inner-banner">
         <div className="container-fluid">
@@ -250,16 +252,16 @@ const PickupLocation = () => {
           </div>
         </div>
       </div>
-
-      <div className="container-fluid ">
+<section className="faq_Section">
+<div className="container-fluid ">
         <div className="ndr-mangement-section margin_top_bottom">
-          <div className="faq-heading"></div>
+          
           <div className="row justify-content-center">
             <div className="col-md-12 ">
               <div className="ndr-mangemnet-part">
                 <div className="row justify-content-center">
                   <div className="col-md-10">
-                    <div className="text-center my-5">
+                    <div className="text-center mb-5">
                       <h2>FAQs About NDR Management</h2>
                     </div>
                     <Accordion defaultActiveKey="0" flush>
@@ -331,6 +333,8 @@ const PickupLocation = () => {
           </div>
         </div>
       </div>
+</section>
+    
 
       <div className="container-fluid margin_top_bottom">
         <div className="multiple_connect">

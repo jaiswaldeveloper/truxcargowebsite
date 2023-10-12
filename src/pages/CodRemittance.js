@@ -2,6 +2,7 @@ import React from "react";
 import Navigation from "../components/Navigation";
 import Accordion from "react-bootstrap/Accordion";
 import { bg } from "date-fns/locale";
+import { Helmet } from "react-helmet";
 const CodRemittance = () => {
   const bg_early = {
     borderRadius: "30px",
@@ -15,11 +16,12 @@ const CodRemittance = () => {
 
   const trusted_cod = {
     background: `url("/image/Solutionss/cod/Frame1603.png")`,
-    backgroundSize: "contain",
+    backgroundSize: "cover",
     backgroundPosition: "center",
     width: "100%",
     // height: "100vh",
     backgroundRepeat: "no-repeat",
+  borderRadius: "20px"
   };
   // const bg_cod_connect = {
   //   background: `url("/image/Solutionss/cod/9.png")`,
@@ -31,6 +33,7 @@ const CodRemittance = () => {
   // };
   return (
     <>
+    <Helmet><title>Cod Remittance</title></Helmet>
       <Navigation />
       <div className="inner-banner">
         <div className="container-fluid">
@@ -50,7 +53,7 @@ const CodRemittance = () => {
                   src="/image/SolutionsS/cod/1.png"
                   alt=""
                   srcSet=""
-                  className="w-75"
+                  style={{width:"65%"}}
                 />
               </div>
             </div>
@@ -302,16 +305,16 @@ const CodRemittance = () => {
         </section>
       </div>
 
-      <section className="cod_faqs">
+      <section className="faq_Section">
         <div className="container-fluid ">
           <div className="ndr-mangement-section margin_top_bottom">
-            <div className="faq-heading"></div>
+            
             <div className="row justify-content-center">
               <div className="col-md-12 ">
                 <div className="ndr-mangemnet-part">
                   <div className="row justify-content-center">
                     <div className="col-md-10">
-                      <div className="text-center my-5">
+                      <div className="text-center mb-5">
                         <h2>FAQs About COD Remittance</h2>
                       </div>
                       <Accordion defaultActiveKey="0" flush>

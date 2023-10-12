@@ -22,6 +22,7 @@ import LatestThreeBlogs from "../components/LatestThreeBlogs";
 import ConversionSlider from "../components/ConversionSlider";
 import ServicesComponent from "../components/ServicesComponent";
 import HomeNav from "../components/HomeNav";
+import { Helmet } from "react-helmet";
 
 // import BlogList from "../pages/BlogList";
 
@@ -35,6 +36,7 @@ const HomePage = () => {
   };
   return (
     <>
+    <Helmet><title>TruxCargo- Logistics, Shipping and Courier Services in India.</title></Helmet>
      <HomeNav />
       <HeroBanner />
       <ShipingPartners />

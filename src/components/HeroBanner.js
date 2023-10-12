@@ -54,7 +54,6 @@ const HeroBanner = () => {
                   <img src="/image/slide_1.png" alt="img" />
                   <div className="image_btn"> Shipping</div>
 
-
                  
                 </div>
                 <div class="box">

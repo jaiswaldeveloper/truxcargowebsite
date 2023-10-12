@@ -4,6 +4,7 @@ import Shimmer from "../components/Shimmer";
 import { Link } from "react-router-dom";
 import { format } from "date-fns";
 import HomeNav from "../components/HomeNav";
+import { Helmet } from "react-helmet";
 
 const BlogList = ({ id }) => {
   const [blogCard, setBlogCard] = useState([]);
@@ -70,7 +71,7 @@ const BlogList = ({ id }) => {
   );
 
   return (
-    <>
+    <><Helmet><title>Top Blogs</title></Helmet>
       <HomeNav />
       {/* <div className="blog-banner" style={styes}></div> */}
       <section className="blog-section mt-5">

@@ -31,15 +31,7 @@ const Shimmer = () => {
                
                 </div>
             </div>
-            <div className="col-md-4">
-              <div className="blog-ads-banner">
-                <img
-                  src="/image/Website Blog Banner.png"
-                  alt=""
-                  className="w-100"
-                />
-              </div>
-            </div>
+          
           </div>
         </div>
       </section>

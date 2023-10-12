@@ -10,10 +10,8 @@ const NewsLetter = ({ background, content, paragraph }) => {
   return (
     <>
       <section className="news_letter_section  margin_top_bottom" >
-        <div className="container">
-          <div className="row justify-content-center" >
-            <div className="col-md-8">
-              <div className="newsletterwrapper" style={newsletterStyle}>
+        <div className="container-fluid">
+        <div className="newsletterwrapper" style={newsletterStyle}>
                 <div className="newsletterinside">
                   <h2>
                      {content}
@@ -32,8 +30,6 @@ const NewsLetter = ({ background, content, paragraph }) => {
                   </form>
                 </div>
               </div>
-            </div>
-          </div>
         </div>
       </section>
     </>

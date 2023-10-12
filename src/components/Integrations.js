@@ -11,15 +11,15 @@ const Integrations = () => {
           <div className="row">
             <div className="col-md-5">
             <div className="integration_picture ">
-                <div className="integration_logo">
+                {/* <div className="integration_logo">
                   <img src="/image/shopify.svg" className="w-100" />
 
                   <img src="/image/amazon-web-services.svg" className="w-100" />
                 <img src="/image/magento-1.svg" className="w-100" />
                   <img src="/image/woocommerce.svg" className="w-100" />
-                </div>
+                </div> */}
               </div>
-              <div className="integration_picture_magento mt-5">
+              <div className="integration_picture_magento ">
                 <p>"Elevate Your Ecommerce Game: Seamlessly Sync Multiple Channel Orders with TRUXCARGO's Dashboard. Say Goodbye to Coding Hassles and Unlock a World of Powerful Insights at Your Fingertips."</p>
                 <ul>
                   <li>Elevate Ecommerce Efforts: TRUXCARGO's Magic Dashboard empowers ecommerce businesses effortlessly.</li>
@@ -31,6 +31,7 @@ const Integrations = () => {
                   <li>Magic in Operations: TRUXCARGO adds magic to your online business operations.</li>
                 
                 </ul>
+                <button className=" btn-integration">Explore</button>
               </div>
             </div>
             <div className="col-md-2"></div>

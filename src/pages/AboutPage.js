@@ -2,6 +2,7 @@ import React from "react";
 import HomeNav from "../components/HomeNav";
 import ServicesSlider from "../components/ServicesSlider";
 import TimeLine from "../components/TimeLine";
+import { Helmet } from "react-helmet";
 
 const AboutPage = () => {
   const trusted = {
@@ -11,21 +12,22 @@ const AboutPage = () => {
     width: "100%",
     // height: "500px",
     backgroundRepeat: "no-repeat",
-    padding: "20px",
+    padding: "50px",
     borderRadius:"20px"
   };
   const buissines = {
     background: `url("/image/aboutus/buissines.png")`,
-    backgroundSize: "contain",
+    backgroundSize: "cover",
     backgroundPosition: "center",
     width: "100%",
-    height: "500px",
+    height: "450px",
     backgroundRepeat: "no-repeat",
-    padding: "20px",
+    // padding: "20px",
     borderRadius: "30px",
   };
   return (
     <>
+       <Helmet><title>Company - About us</title></Helmet>
       <HomeNav />
 
       <section className="aboutus_section">
@@ -139,9 +141,9 @@ const AboutPage = () => {
       <TimeLine />
         <div className="container-fluid">
       <div className="future_section margin_top_bottom" style={trusted}>
-          <div className="row justify-content-center">
-            <div className="col-md-8">
-              <h1 className="my-4">Our Company's Bright Future</h1>
+          <div className="row">
+            <div className="col-md-9">
+              <h1 className="mb-4">Our Company's Bright Future</h1>
               <div className="wrapper_future">
                 <ul>
                   <li><b>New App Launch:</b> We recently launched our app, and it's been a big hit with lots of people liking it.</li>
@@ -169,7 +171,7 @@ const AboutPage = () => {
                     to everyone
                   </p>
                 </div>
-                <button className="btn btn-light ">
+                <button className="btn btn-light w-25 ">
                   Explore{" "}
                   <img
                     src="/featured-icon/diagonal-arrow.png"

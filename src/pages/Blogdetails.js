@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { format } from "date-fns";
 import HomeNav from "../components/HomeNav";
+import { Helmet } from "react-helmet";
 const BlogDetails = () => {
   const { id: urlId } = useParams();
   // const { id } = useParams();
@@ -82,6 +83,7 @@ const BlogDetails = () => {
 
   return (
     <>
+    <Helmet><title>Blogs Details</title></Helmet>
       <HomeNav />
       <div className="container-fluid margin_top_bottom">
         <div className="row">

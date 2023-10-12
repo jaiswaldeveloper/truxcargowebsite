@@ -47,7 +47,7 @@ const ContactForm = () => {
           onSubmit={handleSubmit}
           style={rate2}
         >
-          <h4>Enter Your Query</h4>
+          <h4 className="mb-3">Enter Your Message</h4>
           {/* <h3>Calculate Your Shipping Costs Now </h3> */}
 
           <Form.Group className="mb-2" controlId="validationCustom01">
@@ -55,7 +55,7 @@ const ContactForm = () => {
             <Form.Control required type="text" placeholder="Enter Your Name" />
             <Form.Control.Feedback></Form.Control.Feedback>
             <Form.Control.Feedback type="invalid">
-              Please Enter Origin Pincode
+              {/* Please Enter Origin Pincode */}
             </Form.Control.Feedback>
           </Form.Group>
 
@@ -69,7 +69,7 @@ const ContactForm = () => {
             />
             <Form.Control.Feedback></Form.Control.Feedback>
             <Form.Control.Feedback type="invalid">
-              Please Enter phone number
+              {/* Please Enter phone number */}
             </Form.Control.Feedback>
           </Form.Group>
           <Form.Group className="mb-2" controlId="validationCustom04">
@@ -81,7 +81,7 @@ const ContactForm = () => {
             />
             <Form.Control.Feedback></Form.Control.Feedback>
             <Form.Control.Feedback type="invalid">
-              Please Enter email
+              {/* Please Enter email */}
             </Form.Control.Feedback>
           </Form.Group>
           <Form.Group className="mb-2" controlId="validationCustom05">
@@ -89,7 +89,7 @@ const ContactForm = () => {
             <Form.Control required type="number" placeholder="Enter Subject" />
             <Form.Control.Feedback></Form.Control.Feedback>
             <Form.Control.Feedback type="invalid">
-              Please Enter Subject
+              {/* Please Enter Subject */}
             </Form.Control.Feedback>
           </Form.Group>
 
@@ -99,7 +99,7 @@ const ContactForm = () => {
             <Form.Control required as="textarea" rows={4}  />
             <Form.Control.Feedback></Form.Control.Feedback>
             <Form.Control.Feedback type="invalid">
-              Please Enter Message
+              {/* Please Enter Message */}
             </Form.Control.Feedback>
           </Form.Group>
           <Button type="submit" className="btn button-cal">
